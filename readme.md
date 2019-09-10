@@ -23,7 +23,7 @@ Requirements: Python 3.6, PyTorch 0.4
 ### Performance
 Performance on CIFAR-10 with VGG-16 as architecture:
 
-<img src="./fig/cifar10-vgg" width="400" hegiht="80" align=center />
+<img src="./fig/cifar10-vgg.png" width="400" hegiht="80" align=center />
 
 For other experimental results, please refer to the original paper.
 
