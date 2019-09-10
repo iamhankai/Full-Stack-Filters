@@ -1,6 +1,10 @@
 ## Full-Stack Filters
 Code for Paper: [Full-Stack Filters to Build Minimum Viable CNNs (MVNet)](https://arxiv.org/abs/1908.02023)
 
+In this paper, we propose a novel convolution operation with full-stack filters and auxiliary masks to reduce redundancy in convolution filters for building minimum viable CNNs, i.e. MVNets. A series of full-stack filters with additional binary masks which requiring negligible memory resource in the proposed convolution method can generate much more inherited sub-filters and achieve approximate performance to the original convolution.
+
+![](fig/full-stack-filters.png)
+
 ### Description
 - MVNet with Full-Stack Filters inference code on CIFAR-10 dataset.
 - We provide the trained model in `models/cifar10-s64.th` which occupies 15 MB, including `1.0 MB` `float32` weights and `14.0 MB` binary masks stored in `int8` format (so it's `1.75 MB` in `bool` format which is not supported in PyTorch yet).
